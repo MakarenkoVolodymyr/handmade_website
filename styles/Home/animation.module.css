@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #121212;
+    background: linear-gradient(to right, #485563, #29323c);
     color: #F2F2F2;
     overflow: hidden;
     position: relative;

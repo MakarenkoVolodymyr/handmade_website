@@ -1,0 +1,31 @@
+.product__card {
+    background: linear-gradient( #2830483b, #8593983a);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px rgba(59, 56, 56, 0.2);
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    .product__card:hover {
+    box-shadow: 0px 8px 16px rgba(105, 112, 72, 0.897);
+    }
+    
+    .product__image {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    }
+    
+    .product__name {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #e6e6e6;
+    }
+    
+    .product__price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #008793;
+    }

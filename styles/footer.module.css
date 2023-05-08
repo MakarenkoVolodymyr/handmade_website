@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #121212;
+    background: linear-gradient(to right, #485563, #29323c);
     color: #fff;
     padding: 20px;
   }

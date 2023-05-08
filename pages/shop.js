@@ -19,7 +19,7 @@ const Shop = ({ products }) => (
       {products?.map((product) => <Product key={product._id} product={product} />)}
     </div>
 
-    {/*<FooterBanner />*/}
+    <FooterBanner />
   </div>
 );
 

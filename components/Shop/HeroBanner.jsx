@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
-//import img from '../../public/render.png';
 
 import styles from '../../styles/Shop/heroBanner.module.css';
 
@@ -11,7 +11,7 @@ const HeroBanner = () => {
     midText: 'Discover the Latest',
     largeText1: 'Wireless Headphones',
     largeText2: 'with Noise Cancellation',
-    image: '',
+    image: '/public/render.png',
     product: 'wireless-headphones',
     buttonText: 'Shop Now',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -26,7 +26,7 @@ const HeroBanner = () => {
           {heroBanner.largeText1}<br />
           {heroBanner.largeText2}
         </h1>
-        <img src={heroBanner.image} alt="headphones" className={styles.hero__banner__image} />
+        <Image src={heroBanner.image} alt="Product" className={styles.hero__banner__image} width={400} height={400}/>
 
         <div>
           <Link href={`/product/${heroBanner.product}`}>

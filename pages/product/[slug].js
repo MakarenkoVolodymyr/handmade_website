@@ -5,6 +5,9 @@ import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
+import cn from 'classnames'
+import styles from '../../styles/[slug].module.css';
+
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
@@ -17,27 +20,27 @@ const ProductDetails = ({ product, products }) => {
   }
 
   return (
-    <div>
-      <div className="product-detail-container">
+    <div className={styles.wrapper}>
+      <div className={styles.product__detail__container}>
         <div>
-          <div className="image-container">
-            <img src={urlFor(image && image[index])} className="product-detail-image" />
+          <div className={styles.image__container}>
+            <img src={urlFor(image && image[index])} className={styles.product__detail__image} />
           </div>
-          <div className="small-images-container">
+          <div className={styles.small__images__container}>
             {image?.map((item, i) => (
               <img 
                 key={i}
                 src={urlFor(item)}
-                className={i === index ? 'small-image selected-image' : 'small-image'}
+                className={i === index ? cn(styles.small__image, styles.selected__image) : styles.small__image}
                 onMouseEnter={() => setIndex(i)}
               />
             ))}
           </div>
         </div>
 
-        <div className="product-detail-desc">
+        <div className={styles.product__detail__desc}>
           <h1>{name}</h1>
-          <div className="reviews">
+          <div className={styles.reviews}>
             <div>
               <AiFillStar />
               <AiFillStar />
@@ -51,26 +54,26 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <h4>Details: </h4>
           <p>{details}</p>
-          <p className="price">${price}</p>
-          <div className="quantity">
+          <p className={styles.price}>${price}</p>
+          <div className={styles.quantity}>
             <h3>Quantity:</h3>
-            <p className="quantity-desc">
-              <span className="minus" onClick={decQty}><AiOutlineMinus /></span>
-              <span className="num">{qty}</span>
-              <span className="plus" onClick={incQty}><AiOutlinePlus /></span>
+            <p className={styles.quantity__desc}>
+              <span className={styles.minus} onClick={decQty}><AiOutlineMinus /></span>
+              <span className={styles.num}>{qty}</span>
+              <span className={styles.plus} onClick={incQty}><AiOutlinePlus /></span>
             </p>
           </div>
-          <div className="buttons">
-            <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
-            <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+          <div className={styles.buttons}>
+            <button type="button" className={styles.add__to__cart} onClick={() => onAdd(product, qty)}>Add to Cart</button>
+            <button type="button" className={styles.buy__now} onClick={handleBuyNow}>Buy Now</button>
           </div>
         </div>
       </div>
 
-      <div className="maylike-products-wrapper">
+      <div className={styles.maylike__products__wrapper}>
           <h2>You may also like</h2>
-          <div className="marquee">
-            <div className="maylike-products-container track">
+          <div className={styles.marquee}>
+            <div className={styles.maylike__products__container} track>
               {products.map((item) => (
                 <Product key={item._id} product={item} />
               ))}
