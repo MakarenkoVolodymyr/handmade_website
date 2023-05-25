@@ -19,7 +19,7 @@ const Home = () => {
           </p>
         </div>
         <div className={styles.hero__image}>
-          <Image src="/../public/untitled1.png" alt="Welcome to our Company" className={styles.image} width={800} height={600}/>
+          <Image src="/../public/company_img.jpg" alt="Welcome to our Company" className={styles.image} width={800} height={600}/>
         </div>
       </div>
 
@@ -34,11 +34,14 @@ const Home = () => {
           </p>
         </div>
         <div className={styles.right__block}>
-          <Image src="/../public/untitled1.png" alt="Our Company" className={styles.image} width={600} height={400} />
+          <Image src="/../public/sub_company_img.jpg" alt="Our Company" className={styles.image} width={600} height={400} />
         </div>
       </div>
 
       <div className={styles.container}>
+      <div className={styles.left__block}>
+          <Image src="/../public/material_img.jpg" alt="Our Material" className={styles.image} width={600} height={400} />
+        </div>
         <div className={styles.right__block}>
           <h2 className={styles.subtitle}>Our Material</h2>
           <p className={styles.right__block__text}>
@@ -48,9 +51,7 @@ const Home = () => {
             Integer volutpat eros quis lorem vestibulum iaculis.
           </p>
         </div>
-        <div className={styles.left__block}>
-          <Image src="/../public/untitled1.png" alt="Our Material" className={styles.image} width={600} height={400} />
-        </div>
+        
       </div>
 
       <div className={styles.container}>
@@ -64,7 +65,7 @@ const Home = () => {
           </p>
         </div>
         <div className={styles.right__block}>
-          <Image src="/../public/untitled1.png" alt="Our Product" className={styles.image} width={600} height={400} />
+          <Image src="/../public/product_img.jpg" alt="Our Product" className={styles.image} width={600} height={400} />
         </div>
       </div>
 
@@ -80,7 +81,7 @@ const Home = () => {
           </Link>
         </div>
         <div className={styles.hero__image}>
-          <Image src="/../public/untitled1.png" alt="Handmade Rolled Flowers Shadow Box" className={styles.image} width={800} height={600} />
+          <Image src="/../public/shop_img.webp" alt="Handmade Rolled Flowers Shadow Box" className={styles.image} width={800} height={600} />
         </div>
       </div>
     </div>

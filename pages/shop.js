@@ -12,14 +12,14 @@ const Shop = ({ products }) => (
     <HeroBanner />
     <div className={styles.products__heading}>
       <h2>Best Seller Products</h2>
-      <p>speaker There are many variations passages</p>
+      <p>There are many variations</p>
     </div>
 
     <div className={styles.products__container}>
       {products?.map((product) => <Product key={product._id} product={product} />)}
     </div>
 
-    <FooterBanner />
+    
   </div>
 );
 

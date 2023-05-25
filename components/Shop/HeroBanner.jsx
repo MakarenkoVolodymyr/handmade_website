@@ -6,6 +6,20 @@ import Image from 'next/image';
 import styles from '../../styles/Shop/heroBanner.module.css';
 
 const HeroBanner = () => {
+  
+  return (
+    <div className={styles.hero__banner__container}>
+      <Image src="/../public/banner.png" alt="Our Material" className={styles.image} width={5405} height={2145} />
+    </div>
+  )
+}
+
+export default HeroBanner;
+
+/*
+import styles from '../../styles/Shop/heroBanner.module.css';
+
+const HeroBanner = () => {
   const heroBanner = {
     smallText: 'New Arrivals',
     midText: 'Discover the Latest',
@@ -43,3 +57,4 @@ const HeroBanner = () => {
 }
 
 export default HeroBanner;
+*/
