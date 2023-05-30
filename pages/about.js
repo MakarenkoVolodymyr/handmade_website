@@ -5,12 +5,8 @@ const About = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>About Us</h1>
       <p className={styles.text}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit
-        tristique nisi, sed eleifend dolor ultricies sed. Vestibulum eu feugiat
-        tellus, sed rutrum ipsum. Nulla facilisi. Nullam vehicula velit vitae
-        iaculis rhoncus. Sed nec massa vel mauris vestibulum luctus. Fusce in
-        metus sed arcu semper vehicula. Ut elementum elit sit amet libero
-        ullamcorper, eu molestie urna facilisis.
+      We specialize in creating unique handmade crafts. With attention to detail and passion for craftsmanship,
+          we bring your ideas to life. Discover personalized gifts, home decor items, and accessories crafted with care. Experience the artistry of handmade goods at our workshop.
       </p>
       <button className={styles.button}>Learn More</button>
     </div>
